@@ -343,7 +343,7 @@
           </ul>
         </div>
       </section>
-      w
+
       <!-- Customers -->
       <section class="section section-customers">
         <div class="container customers-container">
@@ -398,6 +398,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container container-footer">
+        <!-- FIRST PART FOOTER -->
         <div class="footer-first">
           <a class="logo logo-footer" href="./index.html"
             ><span class="logo-web">Web</span
@@ -408,7 +409,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-
+        <!-- SECOND PART FOOTER -->
         <div class="footer-second">
           <p class="text-social"><b>Social media</b></p>
           <ul class="social-list footer-list">
@@ -442,8 +443,32 @@
             </li>
           </ul>
         </div>
+        <!-- THIRD PART FOOTER -->
+        <div class="footer-third">
+          <strong class="calling-heading">Subscribe</strong>
+          <form class="calling-form" name="subscribe">
+            <input
+              class="footer-form-mail"
+              name="email"
+              type="email"
+              placeholder="E-mail"
+            />
+
+            <button class="footer-btn-form" type="submit">
+              Subscribe
+              <svg class="footer-btn-svg">
+                <use
+                  href="./img/symbol-defs1.svg#icon-subscribe"
+                  width="24"
+                  hieght="24"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close type="button">
@@ -451,6 +476,102 @@
             <use href="./img/symbol-defs1.svg#icon-close-btn"></use>
           </svg>
         </button>
+
+        <strong class="madal-heading"
+          >Leave your contacts and we will call you back
+        </strong>
+        <form
+          class="field-modal"
+          name="modal
+      "
+          autocomplete="on"
+        >
+          <!-- MODALFORM LIST -->
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label class="modal-label"> Name </label>
+              <div class="modal-field">
+                <svg class="modal-label-svg user" width="12" height="12">
+                  <use href="./img/symbol-defs1.svg#icon-user"></use>
+                </svg>
+
+                <input
+                  class="modal-user modal-input"
+                  name="name"
+                  type="text"
+                  autofocus="on"
+                  minlength="5"
+                  required
+                />
+              </div>
+            </li>
+
+            <li class="modal-item">
+              <label class="modal-label"> Phone </label>
+              <div class="modal-field">
+                <svg class="modal-label-svg" width="13" height="13">
+                  <use href="./img/symbol-defs1.svg#icon-tel"></use>
+                </svg>
+
+                <input
+                  class="modal-phone modal-input"
+                  name="tel"
+                  type="tel"
+                  minlength="5"
+                  required
+                />
+              </div>
+            </li>
+
+            <li class="modal-item">
+              <label class="modal-label"> Email </label>
+              <div class="modal-field">
+                <svg class="modal-label-svg" width="15" height="12">
+                  <use href="./img/symbol-defs1.svg#icon-email"></use>
+                </svg>
+
+                <input
+                  class="modal-email modal-input"
+                  name="email"
+                  type="email"
+                  minlength="5"
+                  required
+                />
+              </div>
+            </li>
+
+            <li class="modal-item">
+              <label class="feedback-label modal-label">Comment</label>
+              <textarea
+                class="feedback-area modal-input"
+                id
+                name="Comment"
+                rows="10"
+                placeholder="Text input"
+                minlength="5"
+              ></textarea>
+            </li>
+          </ul>
+          <!-- POLICY CHECKBOX -->
+          <p class="modal-policy">
+            <label class="policy-label">
+              <input
+                class="policy-check"
+                name="Policy"
+                type="checkbox"
+                required
+              />
+              <span class="checkbox-icon"></span>
+
+              <span class="policy-text">
+                I accept the terms and conditions of the
+                <a class="policy-label-link" href>Privacy Policy</a>
+              </span>
+            </label>
+          </p>
+          <!-- MAIN BTN MODAL -->
+          <button class="main-modal-check" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
