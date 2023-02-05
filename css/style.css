@@ -305,6 +305,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%);
 }
 .modal-button:active,
@@ -350,6 +351,7 @@ img {
 .modal-item {
   display: flex;
   flex-direction: column;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-item:not(:last-child) {
@@ -375,6 +377,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus-within {
   border-color: var(--button-background-color-hover);
@@ -404,6 +407,7 @@ img {
   border-radius: 4px;
   outline: none;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .feedback-area:not(:placeholder-shown) {
   border: 1px solid var(--button-background-color);
@@ -447,7 +451,8 @@ img {
   height: 16px;
   border: 1.25px solid var(--hero-bg-color);
   border-radius: 2px;
-  /* transform: translateY(-50%); */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .policy-check:checked + .checkbox-icon {
   border-color: transparent;
@@ -472,6 +477,12 @@ img {
 .policy-label-link {
   color: var(--button-background-color);
   text-decoration: underline;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy-label-link:hover,
+.policy-label-link:focus,
+.policy-label-link:active {
+  color: var(--button-background-color-hover);
 }
 
 .main-modal-check {
@@ -489,11 +500,16 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 500;
-
   letter-spacing: 0.04em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* transform: translate(-50%, 0%); */
 }
-
+.main-modal-check:hover,
+.main-modal-check:focus,
+.main-modal-check:active {
+  background-color: var(--button-background-color-hover);
+}
 /* --------------------- */
 
 /* -----FEATERE----- */
